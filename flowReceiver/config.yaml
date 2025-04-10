@@ -1,0 +1,6 @@
+version: "0.0.1"
+mlServer:
+  port: 50019
+
+buffer:
+  grpcReceiverQueueSize: 1000

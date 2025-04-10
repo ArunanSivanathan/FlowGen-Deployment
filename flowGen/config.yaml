@@ -1,0 +1,32 @@
+version: "0.0.1"
+internalDevices:
+  - id: 0
+    name: "<br-lan>"
+    mac: "DE:6A:A7:19:76:69"
+
+  # - id: 1
+  #   name: "<br-wan>"
+  #   mac: "B2:4E:68:E7:86:C3"
+
+  # - id: 2
+  #   name: "<phy0-ap0>"
+  #   mac: "B2:4E:68:E7:86:C4"
+
+  # - id: 3
+  #   name: "<phy1-ap0>"
+  #   mac: "B2:4E:68:E7:86:D4"
+
+
+interface:
+  iface: "br-lan"
+  snapLen: 1500
+  promiscuous: true
+  flowDuration: 60s
+
+memoryBuffer:
+  packetQueue: 1000
+  flowExportQueueSize: 100
+
+mlServer:
+  ip: "149.171.37.183"
+  port: 50019
