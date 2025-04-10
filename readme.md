@@ -56,7 +56,7 @@ flowExtractor/
     ```
     
     Look for the `br-lan` section and copy the `HWaddr` (MAC address).
-    ![[images/ifconfig.png]]
+    ![ifconfig](https://github.com/ArunanSivanathan/FlowGen-Deployment/blob/main/images/ifconfig.png)
     
 3. Open `config.yaml` and replace the `mac` field under `internalDevices` with the MAC address of the Banana Pi's `br-lan`.
     
@@ -108,7 +108,7 @@ cd /home/<user>/flowGen/
 
 ### Example Output of Flow Receiver:
 
-![[images/serverOutput.png]]
+![server output](https://github.com/ArunanSivanathan/FlowGen-Deployment/blob/main/images/serverOutput.png)
 ---
 
 ---
